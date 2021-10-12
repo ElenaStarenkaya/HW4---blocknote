@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var x, y, str = " ";
+        var actionNumber;
+
+
+        do {
+            actionNumber = +prompt("Введите номер команды:\n\n1. Сложить два числа;\n2. Возвести число в квадрат;\n3. Добавить запись в блокнот;\n4. Посмотреть блокнот;\n5. Очистить блокнот;\n6. Завершить программу.");
+            switch (actionNumber) {
+                case (1):
+                    x = +prompt("Сложение двух чисел.\nВведите первое число:");
+                    y = +prompt("Сложение двух чисел.\nВведите второе число:");
+                    alert("Сумма введенных чисел: " + (x + y));
+                    break;
+                case (2):
+                    x = +prompt("Возведение числа в квадрат.\nВведите число:");
+                    alert("Квадрат введенного числа равен " + x ** 2);
+                    break;
+                case (3):
+                    str = prompt("Добавление записи в блокнот.\n\nВведите новую запись:");
+                    for (i = 1; i < 10; i++)
+                        str += String(i) + "\n";
+                    break;
+                case (4):
+                    alert("Просмотр блокнота.\n\n" + (str+= String(i) + "\n"));
+                    break;
+                case (5):
+                    x = confirm("Очистить блокнот?");
+                    break;
+                case (6):
+                    x = confirm("Завершить проuрамму?");
+                default: alert("Error");
+            }
+        }
+        while (confirm("Хотите выбрать другое действие?"));
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
